@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from.models import post
 
-# Create your views here.
+
+def one(request):
+	obj =post.objects.all()
+	context={'model':obj}
+	return render(request,'portfolio/base.html',context)
