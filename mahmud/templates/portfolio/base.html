@@ -13,44 +13,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <style>
 </style>
-
+</head>
 <body>
 
-
 <div class="container">
-  <div class="row">
-  {% for post in model %}
- <div class="col  col-sm-6 col-md-6  col-lg-4 col-xl-2 ">
-<!-- <div class="card text-center" style="width:auto"> -->  <!-- //for start card with card size  -->
- <img class="card-img-top" src="{{ post.Image.url }}" alt="Card image">    <!--  // for add img with img size -->
-  <div class="card-body text-white bg-secondary mb-2">   <!-- //for cad body -->
-    <!-- <div class="card-img-overlay">  --> <!-- //for image background or img-overlay -->
-     <h2 class="card-title">{{post.Title}}</h2>   <!-- // for card title -->
-    <h6 class="card-subtitle mb-2 text-white ">{{post.Sub_title}}</h6>   <!-- //for cars-subtitle -->
-    <p class="card-text text-truncate  ">&#8986;{{post.Text}}</p>  <!--  //for text add -->
-    <!-- <div class="card-footer bg-dark"> -->
-   <p class="card-text"><small class="text-white mt-2"><i>Last updated {{post.Date}}</i></small></p> <!-- </div> -->
-    <!-- <a href="#" class="card-link">Card link</a> -->   <!-- //for basic form link or link with button -->
-    <a href="{{post.Link}}"  class="btn btn-primary">See more</a>   <!-- //add link with button -->
-    <!-- <a href="{{post.Link}}" class="stretched-link"></a> -->  <!-- //for basic form add link behind all card body  -->
-    <!-- <a href="#" class="btn btn-primary stretched-link">See Profile</a> --> <!-- add link total link with button  -->
 
-    
-</div>
-</div>
-{% endfor %}
-</div>
+{% block content %}
+{% endblock %}
 
 </div>
-
-
-
-<!-- <div class="container">
-<div class="jumbotron">
-	<h1>ddddddjdjdj</h1>
-  </div>
-</div> -->
-
-
 </body>
 </html>
